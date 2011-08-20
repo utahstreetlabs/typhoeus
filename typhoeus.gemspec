@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{typhoeus}
-  s.version = "0.2.4"
+  s.version = "0.2.4.copious"
 
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
+  s.required_rubygems_version = Gem::Requirement.new("> 1.3.1") if s.respond_to? :required_rubygems_version=
   s.authors = ["Paul Dix", "David Balatero"]
-  s.date = %q{2011-05-13}
+  s.date = %q{2011-08-19}
   s.description = %q{Like a modern code version of the mythical beast with 100 serpent heads, Typhoeus runs HTTP requests in parallel while cleanly encapsulating handling logic.}
   s.email = %q{dbalatero@gmail.com}
   s.extensions = ["ext/typhoeus/extconf.rb"]
@@ -60,6 +60,7 @@ Gem::Specification.new do |s|
      "lib/typhoeus/response.rb",
      "lib/typhoeus/service.rb",
      "lib/typhoeus/utils.rb",
+     "lib/typhoeus/version.rb",
      "profilers/valgrind.rb",
      "spec/fixtures/placeholder.gif",
      "spec/fixtures/placeholder.txt",
@@ -89,24 +90,24 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.6.2}
   s.summary = %q{A library for interacting with web services (and building SOAs) at blinding speed.}
   s.test_files = [
-    "spec/spec_helper.rb",
-     "spec/typhoeus/hydra_spec.rb",
-     "spec/typhoeus/request_spec.rb",
-     "spec/typhoeus/remote_spec.rb",
-     "spec/typhoeus/remote_method_spec.rb",
-     "spec/typhoeus/response_spec.rb",
-     "spec/typhoeus/form_spec.rb",
+    "spec/typhoeus/hydra_spec.rb",
      "spec/typhoeus/filter_spec.rb",
-     "spec/typhoeus/multi_spec.rb",
-     "spec/typhoeus/easy_spec.rb",
-     "spec/typhoeus/utils_spec.rb",
-     "spec/typhoeus/normalized_header_hash_spec.rb",
-     "spec/typhoeus/hydra_mock_spec.rb",
+     "spec/typhoeus/remote_method_spec.rb",
      "spec/typhoeus/remote_proxy_object_spec.rb",
+     "spec/typhoeus/multi_spec.rb",
+     "spec/typhoeus/form_spec.rb",
+     "spec/typhoeus/request_spec.rb",
+     "spec/typhoeus/hydra_mock_spec.rb",
+     "spec/typhoeus/remote_spec.rb",
+     "spec/typhoeus/normalized_header_hash_spec.rb",
+     "spec/typhoeus/utils_spec.rb",
+     "spec/typhoeus/response_spec.rb",
+     "spec/typhoeus/easy_spec.rb",
      "spec/servers/app.rb",
-     "examples/times.rb",
+     "spec/spec_helper.rb",
+     "examples/twitter.rb",
      "examples/file.rb",
-     "examples/twitter.rb"
+     "examples/times.rb"
   ]
 
   if s.respond_to? :specification_version then
